@@ -8,7 +8,7 @@ async function checkCamStatus() {
     const res = await axios.get(URL, { timeout: 100000 });
     const end = Date.now();
 
-    console.log("✅ Cam responded:", res.data || "OK");
+    console.log("✅ Cam responded:", "OK");
     console.log(`⏱️ Response time: ${(end - start) / 1000}s`);
   } catch (err) {
     console.error("❌ Cam unreachable:", err.message);
